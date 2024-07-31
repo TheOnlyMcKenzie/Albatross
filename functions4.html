@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Albatross </title> 
+		<meta name="description" content=" ... "> 
+		<link href="css/style.css" rel="stylesheet"> 
+
+		
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		
+  		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+  		<script src="scripts/jquery.sidr.min.js"></script>
+  		<script src="scripts/menu.js"></script>
+  		<script src="scripts/example.js"></script>
+ 	</head> 
+
+	<body> 
+		<header>
+			<h1> Albatross </h1>
+		</header>
+
+		<a id="simple-menu" href="sidr"><img src="img/icon.png"></a>
+
+		<div id="sidr">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="intro.html">Python Basics</a></li>
+				<li><a href="lists_intro.html">Lists</a></li>
+				<li><a href="dicts_intro.html">Dictionaries</a></li>
+				<li><a class="active" href="functions_intro.html">Functions</a></li>
+				<li><a href="about.html">About Albatross</a></li>
+			</ul>
+		</div>
+		
+		<main>
+
+
+			<article>
+				<h2> FUNCTIONS </h2>
+				<h3> Getting Data Into a Function </h3>
+				<p>The real power of computing starts to be unleashed when we're able to apply a function repeatedly to different pieces of data. The data might be stored somewhere that the function can access it such as a function accessing global variables. Usually, however, it is better design to send the input data directly into the function in the form of one or more inputs specified in its parentheses. These inputs are usually called parameters or arguments. </p>
+				<p>This works in the same way as, for example, the sine function on a calculator “sin(x)”. The sine function must be sent an input to work with. In fact, we have been sending inputs to a function right from our very first program. Specifically we have been sending the data that we want to print out to the <code>print()</code> function e.g. <code>print("Hello")</code>.</p>
+				<p>The function definition must create in its parentheses ( ) one or more local variables for each input it is being set up to receive. These input parameters operate as local variables, only accessible within the function body. </p>
+			</article>
+
+
+			<article>
+
+				
+				<section>
+					<code>
+						<pre> 
+<span class="orange">def</span> <span class="blue">function_one</span>(s):
+	<span class="green">"""set up for one input</span>
+	<span class="green">   names it s</span>
+	<span class="green">"""</span>
+	<span class="purple">print</span>(s)
+
+						</pre>
+					</code>
+				</section>
+
+				<p>In the main routine, this function could be called as follows: </p>
+
+				<section>
+					<code>
+						<pre> 
+function_one(<span class="green">"Hello World"</span>)
+
+						</pre>
+					</code>
+				</section>
+
+				
+			</article>
+
+
+			<div class="wrapper">
+				<button><a href="functions3.html">Previous Lesson</a></button>
+				<div class="space"></div>
+				<button><a href="functions5.html">Next Lesson</a></button>
+			</div>
+		</main>
+
+		<footer>
+			<p> Made by James McKenzie in 2020 </p>
+		</footer>
+ 
+	</body> 
+
+</html> 

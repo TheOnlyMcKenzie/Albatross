@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Albatross </title> 
+		<meta name="description" content=" ... "> 
+		<link href="css/style.css" rel="stylesheet"> 
+
+		
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		
+  		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+  		<script src="scripts/jquery.sidr.min.js"></script>
+  		<script src="scripts/menu.js"></script>
+  		<script src="scripts/example.js"></script>
+ 	</head> 
+
+	<body> 
+		<header>
+			<h1> Albatross </h1>
+		</header>
+
+		<a id="simple-menu" href="sidr"><img src="img/icon.png"></a>
+
+		<div id="sidr">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="intro.html">Python Basics</a></li>
+				<li><a href="lists_intro.html">Lists</a></li>
+				<li><a href="dicts_intro.html">Dictionaries</a></li>
+				<li><a class="active" href="functions_intro.html">Functions</a></li>
+				<li><a href="about.html">About Albatross</a></li>
+			</ul>
+		</div>
+		
+		<main>
+
+
+			<article>
+				<h2> FUNCTIONS </h2>
+				<h3> Defining a Function </h3>
+				<p>A function has a definition - in Python this starts with the keyword <code>def</code>, followed by the function's name, a set of parentheses () (which may or may not be empty) and a colon : . This statement is sometimes called the header. The block of code which describes the behaviour of the function follows, indented by one tab (much like in a loop or if/else statement).</p>
+				<p>This indentation is not optional - Indentation is the way that Python and most other programming languages determine the structure of functions. </p>
+				<section>
+					<code>
+						<pre>
+<span class="orange">def</span> <span class="blue">function_one</span>():
+	<span class="purple">print</span>(<span class="green">"Albatross!"</span>)
+
+						</pre>
+					</code>
+				</section>
+				
+			</article>
+
+			<article>
+				<h3>Calling a Function</h3>
+				<p>In order for a function to run it must be called, either in the main module or another function. To run the function above, we simply type <code>function_one()</code> into the main module.</p>
+			</article>
+
+
+			<div class="wrapper">
+				<button><a href="functions_intro.html">Previous Lesson</a></button>
+				<div class="space"></div>
+				<button><a href="functions2.html">Next Lesson</a></button>
+			</div>
+		</main>
+
+		<footer>
+			<p> Made by James McKenzie in 2020 </p>
+		</footer>
+ 
+	</body> 
+
+</html> 

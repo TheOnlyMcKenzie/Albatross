@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Albatross </title> 
+		<meta name="description" content=" ... "> 
+		<link href="css/style.css" rel="stylesheet"> 
+
+		
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		
+  		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+  		<script src="scripts/jquery.sidr.min.js"></script>
+  		<script src="scripts/menu.js"></script>
+  		
+  		<script src="scripts/example.js"></script>
+
+ 	</head> 
+
+	<body> 
+		<header>
+			<h1> Albatross </h1>
+		</header>
+		
+		<a id="simple-menu" href="sidr"><img src="img/icon.png"></a>
+
+		<div id="sidr">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a class="active" href="intro.html">Python Basics</a></li>
+				<li><a href="lists_intro.html">Lists</a></li>
+				<li><a href="dicts_intro.html">Dictionaries</a></li>
+				<li><a href="functions_intro.html">Functions</a></li>
+				<li><a href="about.html">About Albatross</a></li>
+			</ul>
+		</div>
+		
+		<main>
+
+
+			<article>
+				<h2> PYTHON BASICS </h2>
+				<h3> CONSTANTS </h3>
+				<p>Continuing from variables, let's discuss constants. In mathematics, a constant is the opposite of a variable - it is a value that never changes.</p>
+				<p> Given that constants are the opposite of variables in a sense, in Python, constants are denoted with upper-case letters. All other conventions surrounding variables apply e.g. <code>MAX_CHARS</code>.</p> 
+				<p> In general, it is best practice when programming to avoid any hard-coded values and instead use constants as much as possible. This makes the value represented by a constant easy to change if need be - all you have to do is change the value once rather than wasting time finding all instances of that value in your program.</p>
+			</article>
+<!--Start of html code for the 'Example code' section (this is the first instance of it being toggleable using jQuery)-->
+			<div class="wrapper">
+				<h3> Example Code </h3>
+				<div class="space"></div>
+				<button class="show">SHOW</button>
+			</div>
+			<article class="example">
+				<p> Copy this code to your IDE, save it and run it in the module to see what happens:</p>
+				<section>
+					<code>
+						<pre>
+PI = 3.14
+r = 20.7
+
+<span class="purple">print</span>(r)
+
+area = PI * (r*r)
+
+<span class="purple">print</span>(area)
+
+						</pre>
+					</code>
+				</section>
+				<button class="hide">HIDE</button>
+			</article>
+<!--End of html code for toggleable 'Example code' section-->
+			<div class="wrapper">
+				<button><a href="basics2.html">Previous Lesson</a></button>
+				<div class="space"></div>
+				<button><a href="basics4.html">Next Lesson</a></button>
+			</div>
+		</main>
+
+		<footer>
+			<p> Made by James McKenzie in 2020 </p>
+		</footer>
+ 
+	</body> 
+
+</html> 

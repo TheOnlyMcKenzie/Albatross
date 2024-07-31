@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Albatross </title> 
+		<meta name="description" content=" ... "> 
+		<link href="css/style.css" rel="stylesheet"> 
+
+		
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		
+  		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+  		<script src="scripts/jquery.sidr.min.js"></script>
+  		<script src="scripts/menu.js"></script>
+  		<script src="scripts/example.js"></script>
+ 	</head> 
+
+	<body> 
+		<header>
+			<h1> Albatross </h1>
+		</header>
+
+		<a id="simple-menu" href="sidr"><img src="img/icon.png"></a>
+
+		<div id="sidr">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="intro.html">Python Basics</a></li>
+				<li><a href="lists_intro.html">Lists</a></li>
+				<li><a class="active" href="dicts_intro.html">Dictionaries</a></li>
+				<li><a href="functions_intro.html">Functions</a></li>
+				<li><a href="about.html">About Albatross</a></li>
+			</ul>
+		</div>
+		
+		<main>
+
+
+			<article>
+				<h2> DICTIONARIES </h2>
+				<h3> Adding to a Dictionary </h3>
+				<p>To add a single item to a dictionary, write the key in [key] and assign the value, like so: <code>country_foods["Mexico"] = "Burrito"</code>. </p>
+				<p>If we want to add multiple items to our dictionary, we can use the <code>.update()</code> function, writing the contents we want to add to the dictionary just as if we were adding a new one. </p>
+				<section>
+					<code>
+						<pre>
+country_foods.update({<span class="green">"France"</span>:<span class="green">"Croissant"</span>, <span class="green">"Thailand"</span>:<span class="green">"Phad Thai"</span>})
+
+						</pre>
+					</code>
+				</section>
+			</article>
+			<article>
+				<h3> Changing Values in a Dictionary</h3>
+				<p>We can modify a single value by writing something like this: <code>country_foods["Mexico"] = "Taco"</code>. We have changed Mexico's value from "Burrito" to "Taco". </p>
+				<p>We can modify multiple values the same way we use <code>update()</code>, this will update any new items to its new value and if it does not exist, add it to the dictionary. </p>
+				<section>
+					<code>
+						<pre>
+country_foods.update({<span class="green">"France"</span>:<span class="green">"Bouillabaisse"</span>, <span class="green">"Spain"</span>:<span class="green">"Paella"</span>})
+
+						</pre>
+					</code>
+				</section>
+				
+			</article>
+			<article>
+				<h3> Removing Values from a Dictionary</h3>
+				<p>Finally, just as with lists, we can use the <code>del</code> function to remove a value from a dictionary, but instead of passing the index, we pass the key.</p>
+				<section>
+					<code>
+						<pre>
+<span class="orange">del</span> country_foods[<span class="green">"France"</span>]
+
+						</pre>
+					</code>
+				</section>
+				<p>Be careful that you don't forget to include the key - otherwise you'11 delete the entire dictionary! </p>
+				<p> This is the end of the Dictionaries course. If you are keen to learn more, check out our other courses! </p>
+			</article>
+
+
+			<div class="wrapper">
+				<button><a href="dicts3.html">Previous Lesson</a></button>
+				<div class="space"></div>
+				<button><a href="index.html">Back to Home</a></button>
+			</div>
+		</main>
+
+		<footer>
+			<p> Made by James McKenzie in 2020 </p>
+		</footer>
+ 
+	</body> 
+
+</html> 

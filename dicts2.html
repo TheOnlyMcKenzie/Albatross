@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Albatross </title> 
+		<meta name="description" content=" ... "> 
+		<link href="css/style.css" rel="stylesheet"> 
+
+		
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		
+  		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+  		<script src="scripts/jquery.sidr.min.js"></script>
+  		<script src="scripts/menu.js"></script>
+  		<script src="scripts/example.js"></script>
+ 	</head> 
+
+	<body> 
+		<header>
+			<h1> Albatross </h1>
+		</header>
+
+		<a id="simple-menu" href="sidr"><img src="img/icon.png"></a>
+
+		<div id="sidr">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="intro.html">Python Basics</a></li>
+				<li><a href="lists_intro.html">Lists</a></li>
+				<li><a class="active" href="dicts_intro.html">Dictionaries</a></li>
+				<li><a href="functions_intro.html">Functions</a></li>
+				<li><a href="about.html">About Albatross</a></li>
+			</ul>
+		</div>
+		
+		<main>
+
+
+			<article>
+				<h2> DICTIONARIES </h2>
+				<h3> Accessing Values in a Dictionary </h3>
+				<p>We can use a dictionary to look up values by using our dictionary name and in square brackets we put a key (instead of using a number like in lists we put in the key's name) i.e. <code>country_foods["Italy"]</code>. </p>
+				<p>Be careful when trying to access a key in a dictionary - if it doesn't exist you will get a key error. Take <code>country_foods["germany"]</code>. In this case, 'germany' does not exist because it is case sensitive (Germany). </p>
+			</article>
+			<article>
+				<h3> Checking for a Key</h3>
+				<p>To avoid looking foolish and getting a bug like that, you should first check by using an <code>if</code>-<code>in</code> condition to see if a key actually exists in the dictionary. </p>
+				<section>
+					<code>
+						<pre>
+country = <span class="green">"Germany"</span>
+
+<span class="orange">if</span> country <span class="orange">in</span> country_foods:
+	<span class="purple">print</span>(country_foods[country])
+
+						</pre>
+					</code>
+				</section>
+				
+			</article>
+			<article>
+				<h3> Checking for a Value</h3>
+				<p>What about a value in a dictionary? Well we can check for that too using <code>.values()</code>.</p>
+				<section>
+					<code>
+						<pre>
+food = <span class="green">"Hamburger"</span>
+
+<span class="orange">if</span> food <span class="orange">in</span> country_foods.values():
+	<span class="purple">print</span>(<span class="green">"That food exists in the dictionary"</span>)
+
+						</pre>
+					</code>
+				</section>
+			</article>
+
+
+			<div class="wrapper">
+				<button><a href="dicts1.html">Previous Lesson</a></button>
+				<div class="space"></div>
+				<button><a href="dicts3.html">Next Lesson</a></button>
+			</div>
+		</main>
+
+		<footer>
+			<p> Made by James McKenzie in 2020 </p>
+		</footer>
+ 
+	</body> 
+
+</html> 

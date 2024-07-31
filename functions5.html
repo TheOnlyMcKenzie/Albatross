@@ -1,0 +1,94 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Albatross </title> 
+		<meta name="description" content=" ... "> 
+		<link href="css/style.css" rel="stylesheet"> 
+
+		
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		
+  		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+  		<script src="scripts/jquery.sidr.min.js"></script>
+  		<script src="scripts/menu.js"></script>
+  		<script src="scripts/example.js"></script>
+ 	</head> 
+
+	<body> 
+		<header>
+			<h1> Albatross </h1>
+		</header>
+
+		<a id="simple-menu" href="sidr"><img src="img/icon.png"></a>
+
+		<div id="sidr">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="intro.html">Python Basics</a></li>
+				<li><a href="lists_intro.html">Lists</a></li>
+				<li><a href="dicts_intro.html">Dictionaries</a></li>
+				<li><a class="active" href="functions_intro.html">Functions</a></li>
+				<li><a href="about.html">About Albatross</a></li>
+			</ul>
+		</div>
+		
+		<main>
+
+
+			<article>
+				<h2> FUNCTIONS </h2>
+				<h3> Getting Data Out Of a Function </h3>
+				<p>Just as a function can accept values (arguments), a module can also be used to calculate and return those values to where they were called. This is done by using the keyword <code>return</code> followed by one or more values.</p>
+			</article>
+
+			<div class="wrapper">
+				<h3> Example Code </h3>
+				<div class="space"></div>
+				<button class="show">SHOW</button>
+			</div>
+
+			<article class="example">
+				<p> Copy this code to your IDE, save it and run it in the module to see what happens:</p>
+				<section>
+					<code>
+						<pre>
+<span class="orange">def</span> <span class="blue">request_info</span>():
+	<span class="green">"""Ask user for exercise information</span>
+	<span class="green">   Then returns three values</span>
+	<span class="green">"""</span>
+
+	exercise = <span class="purple">input</span>(<span class="green">"What was the exercise?: "</span>)
+	weight = <span class="purple">float</span>(<span class="purple">input</span>(<span class="green">"How heavy was the weight in kgs?: "</span>))
+	reps = <span class="purple">int</span>(<span class="purple">input</span>(<span class="green">"How many reps did you do?: "</span>))
+
+	<span class="orange">return</span> exercise, weight, reps
+
+user_exercise, user_weight, user_reps = request_info()
+<span class="purple">print</span>(user_exercise, user_weight, user_reps)
+
+						</pre>
+					</code>
+				</section>
+				<button class="hide">HIDE</button>
+			</article>
+
+			<article>
+				<p>That is the end of the Functions course. Practice the things you've learnt in your IDE, and you'll be a Python master in no time!</p>
+			</article>
+
+
+			<div class="wrapper">
+				<button><a href="functions4.html">Previous Lesson</a></button>
+				<div class="space"></div>
+				<button><a href="index.html">Back to Home</a></button>
+			</div>
+		</main>
+
+		<footer>
+			<p> Made by James McKenzie in 2020 </p>
+		</footer>
+ 
+	</body> 
+
+</html> 

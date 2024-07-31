@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Albatross </title> 
+		<meta name="description" content=" ... "> 
+		<link href="css/style.css" rel="stylesheet"> 
+
+		
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		
+  		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+  		<script src="scripts/jquery.sidr.min.js"></script>
+  		<script src="scripts/menu.js"></script>
+  		<script src="scripts/example.js"></script>
+ 	</head> 
+
+	<body> 
+		<header>
+			<h1> Albatross </h1>
+		</header>
+
+		<a id="simple-menu" href="sidr"><img src="img/icon.png"></a>
+
+		<div id="sidr">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="intro.html">Python Basics</a></li>
+				<li><a href="lists_intro.html">Lists</a></li>
+				<li><a class="active" href="dicts_intro.html">Dictionaries</a></li>
+				<li><a href="functions_intro.html">Functions</a></li>
+				<li><a href="about.html">About Albatross</a></li>
+			</ul>
+		</div>
+		
+		<main>
+
+
+			<article>
+				<h2> DICTIONARIES </h2>
+				<h3> Creating a Dictionary </h3>
+				<p>In Python, dictionaries are denoted with curly brackets { }. Everything inside those curly brackets is part of the dictionary. Items (this time consisting of one key and one value) are separated by a comma. Keys and values are separated by a colon.</p>
+				<p> There are two ways to create a dictionary in Python. The first is to simply define the dictionary like so: <code>dic = {key:value, key:value..}</code></p>
+				<p> The other way is to use the <code>dict</code> function. This is useful if we want to convert a list into a dictionary.</p>
+				<section>
+					<code>
+						<pre>
+countries = [<span class="green">"Italy"</span>, <span class="green">"Japan"</span>, <span class="green">"USA"</span>, <span class="green">"Germany"</span>]
+
+foods = [<span class="green">"Pizza"</span>, <span class="green">"Sushi"</span>, <span class="green">"Hamburger"</span>, <span class="green">"Sauerkraut"</span>]
+
+country_foods = <span class="purple">dict</span>(<span class="purple">zip</span>(countries, foods))
+
+<span class="purple">print</span>(country_foods)
+
+						</pre>
+					</code>
+				</section>
+				
+			</article>
+
+
+			<div class="wrapper">
+				<button><a href="dicts_intro.html">Previous Lesson</a></button>
+				<div class="space"></div>
+				<button><a href="dicts2.html">Next Lesson</a></button>
+			</div>
+		</main>
+
+		<footer>
+			<p> Made by James McKenzie in 2020 </p>
+		</footer>
+ 
+	</body> 
+
+</html> 

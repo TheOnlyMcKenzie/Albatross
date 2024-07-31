@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Albatross </title> 
+		<meta name="description" content=" ... "> 
+		<link href="css/style.css" rel="stylesheet"> 
+
+		
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		
+  		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+  		<script src="scripts/jquery.sidr.min.js"></script>
+  		<script src="scripts/menu.js"></script>
+ 	</head> 
+
+	<body> 
+		<header>
+			<h1> Albatross </h1>
+		</header>
+
+		<a id="simple-menu" href="sidr"><img src="img/icon.png"></a>
+
+		<div id="sidr">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="intro.html">Python Basics</a></li>
+				<li><a class="active" href="lists_intro.html">Lists</a></li>
+				<li><a href="dicts_intro.html">Dictionaries</a></li>
+				<li><a href="functions_intro.html">Functions</a></li>
+				<li><a href="about.html">About Albatross</a></li>
+			</ul>
+		</div>
+		
+		<main>
+
+
+			<article>
+				<h2> LISTS </h2>
+				<h3> Adding and Removing Items From a List </h3>
+				<p>An important thing to remember is that like all arrays, lists start at zero. This means that the index (position) of the first item is 0, the second item is 1, the third item is 2 and so on.</p>
+			</article>
+
+			<article>
+				<h3> Adding Items </h3>
+				<p>If we know the index of the item we want to edit in the list we can change its value, just as we would do with a variable. We do it like this: <code>foods[2] = "Hot Dog"</code></p>
+				<p>We can add a new value to the end of our list by using the <code>append()</code> function (<code>foods.append("Cake")</code>), and we can also choose where we can add an item into a list by using the <code>insert()</code> function. Unlike <code>append()</code> though, <code>insert()</code> takes 2 arguments, the index position and the value, in that order (i.e. <code>foods.insert(2,"Banana")</code>). Everything else in the list will shift as the list expands.</p>
+			</article>
+
+			<article class="example">
+				<h3> Example Code </h3>
+				<p> Copy this code to your IDE, save it and run it in the module to see what happens:</p>
+				<section>
+					<code>
+						<pre>
+foods = [<span class="green">"Pizza"</span>, <span class="green">"Ice Cream"</span>, <span class="green">"Apple"</span>]
+
+<span class="purple">print</span>(foods)
+
+foods[2] = <span class="green">"Cherry"</span>
+
+<span class="purple">print</span>(foods)
+
+foods.append(<span class="green">"Pie"</span>)
+
+<span class="purple">print</span>(foods)
+
+foods.insert(1,<span class="green">"Steak"</span>)
+
+<span class="purple">print</span>(foods)
+
+
+						</pre>
+					</code>
+				</section>
+			</article>
+
+			<article>
+				<h3> Removing Items </h3>
+				<p>If we know the index value of the item we are looking to remove we can use the <code>del</code> function (i.e. <code>del foods[2]</code>). The list will contract to account for the removed item. </p>
+				<p>Sometimes we may want to use the item from the list before we remove it. If we use the <code>pop()</code> function, this will remove the item at a specific index and return it (i.e. <code>foods.pop(1)</code>). </p>
+				<p>Popping an item from our list removes a value from the list but also returns it to us first. To do so, we need to know the index of the item we are looking to remove. We can set that returned value to a variable or just do nothing with it. The list will contract to account for the removed item. </p>
+				<p>Finally, we can remove an item from the list by its value, using <code>remove()</code> (i.e. <code>foods.remove("Cake")</code>). Warning, this only removes the first matching value. </p>
+			</article>
+
+			<article class="example">
+				<h3> Example Code </h3>
+				<p> Copy this code to your IDE, save it and run it in the module to see what happens:</p>
+				<section>
+					<code>
+						<pre>
+foods = [<span class="green">"Pizza"</span>, <span class="green">"Ice Cream"</span>, <span class="green">"Apple"</span>, <span class="green">"Cherry"</span>, <span class="green">"Pie"</span>, <span class="green">"Steak"</span>]
+
+<span class="purple">print</span>(foods)
+
+del foods[5]
+
+<span class="purple">print</span>(foods)
+
+foods.pop(2)
+
+<span class="purple">print</span>(foods)
+
+foods.remove(1,<span class="green">"Pie"</span>)
+
+<span class="purple">print</span>(foods)
+
+
+						</pre>
+					</code>
+				</section>
+			</article>
+
+
+			<div class="wrapper">
+				<button><a href="lists1.html">Previous Lesson</a></button>
+				<div class="space"></div>
+				<button><a href="lists3.html">Next Lesson</a></button>
+			</div>
+		</main>
+
+		<footer>
+			<p> Made by James McKenzie in 2020 </p>
+		</footer>
+ 
+	</body> 
+
+</html> 

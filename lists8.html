@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Albatross </title> 
+		<meta name="description" content=" ... "> 
+		<link href="css/style.css" rel="stylesheet"> 
+
+		
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		
+  		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+  		<script src="scripts/jquery.sidr.min.js"></script>
+  		<script src="scripts/menu.js"></script>
+  		<script src="scripts/example.js"></script>
+ 	</head> 
+
+	<body> 
+		<header>
+			<h1> Albatross </h1>
+		</header>
+
+		<a id="simple-menu" href="sidr"><img src="img/icon.png"></a>
+
+		<div id="sidr">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="intro.html">Python Basics</a></li>
+				<li><a class="active" href="lists_intro.html">Lists</a></li>
+				<li><a href="dicts_intro.html">Dictionaries</a></li>
+				<li><a href="functions_intro.html">Functions</a></li>
+				<li><a href="about.html">About Albatross</a></li>
+			</ul>
+		</div>
+		
+		<main>
+
+
+			<article>
+				<h2> LISTS </h2>
+				<h3> Filling a 2D List </h3>
+				<p>If we want to fill a 2D list, we need a nested loop. Additionally, inside each loop we would need to create a new list.  </p>
+				<p> This is the end of the Lists course. If you are keen to learn more, check out our other courses! </p>
+			</article> 
+			
+			<div class="wrapper">
+				<h3> Example Code </h3>
+				<div class="space"></div>
+				<button class="show">SHOW</button>
+			</div>
+			<article class="example">
+				<p> Copy this code to your IDE, save it and run it in the module to see what happens:</p>
+				<section>
+					<code>
+						<pre>
+x_list = []
+count = 0
+
+<span class="orange">for</span> i <span class="orange">in</span> <span class="purple">range</span>(2):
+	y_list = []
+	x_list.append(y_list)
+	<span class="orange">for</span> j <span class="orange">in</span> <span class="purple">range</span>(2):
+		y_list.append(count)
+		count += 1
+						
+						</pre>
+					</code>
+				</section>
+				<button class="hide">HIDE</button>
+			</article>
+
+			<div class="wrapper">
+				<button><a href="lists7.html">Previous Lesson</a></button>
+				<div class="space"></div>
+				<button><a href="index.html">Back to Home</a></button>
+			</div>
+		</main>
+
+		<footer>
+			<p> Made by James McKenzie in 2020 </p>
+		</footer>
+ 
+	</body> 
+
+</html> 

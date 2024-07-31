@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Albatross </title> 
+		<meta name="description" content=" ... "> 
+		<link href="css/style.css" rel="stylesheet"> 
+
+		
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		
+  		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+  		<script src="scripts/jquery.sidr.min.js"></script>
+  		<script src="scripts/menu.js"></script>
+ 	</head> 
+
+	<body> 
+		<header>
+			<h1> Albatross </h1>
+		</header>
+
+		<a id="simple-menu" href="sidr"><img src="img/icon.png"></a>
+
+		<div id="sidr">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="intro.html">Python Basics</a></li>
+				<li><a class="active" href="lists_intro.html">Lists</a></li>
+				<li><a href="dicts_intro.html">Dictionaries</a></li>
+				<li><a href="functions_intro.html">Functions</a></li>
+				<li><a href="about.html">About Albatross</a></li>
+			</ul>
+		</div>
+		
+		<main>
+
+
+			<article>
+				<h2> LISTS </h2>
+				<h3> Slices </h3>
+				<p>With a list, often we will not need to use the whole thing. We might want to take only a subsection of it. A subsection of a list is called a slice.</p>
+				<p> Taking a slice out of a list is like how we use the <code>range</code> function. We need to define the start index and the end index. Also like a range, the start index is inclusive and the end index is exclusive.  </p>
+			</article> 
+			
+			<article class="example">
+				<h3> Example Code </h3>
+				<p> Copy this code to your IDE, save it and run it in the module to see what happens:</p>
+				<section>
+					<code>
+						<pre>
+foods = [<span class="green">"Pizza"</span>, <span class="green">"Ice Cream"</span>, <span class="green">"Apple"</span>, <span class="green">"Cherry"</span>, <span class="green">"Pie"</span>, <span class="green">"Steak"</span>]
+
+<span class="purple">print</span>(foods[2:5])
+						</pre>
+					</code>
+				</section>
+			</article>
+
+			<div class="wrapper">
+				<button><a href="lists5.html">Previous Lesson</a></button>
+				<div class="space"></div>
+				<button><a href="lists7.html">Next Lesson</a></button>
+			</div>
+		</main>
+
+		<footer>
+			<p> Made by James McKenzie in 2020 </p>
+		</footer>
+ 
+	</body> 
+
+</html> 

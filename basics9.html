@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Albatross </title> 
+		<meta name="description" content=" ... "> 
+		<link href="css/style.css" rel="stylesheet"> 
+
+	
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		
+  		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+  		<script src="scripts/jquery.sidr.min.js"></script>
+  		<script src="scripts/menu.js"></script>
+  		<script src="scripts/example.js"></script>
+
+ 	</head> 
+
+	<body> 
+		<header>
+			<h1> Albatross </h1>
+		</header>
+		
+		<a id="simple-menu" href="sidr"><img src="img/icon.png"></a>
+
+		<div id="sidr">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a class="active" href="intro.html">Python Basics</a></li>
+				<li><a href="lists_intro.html">Lists</a></li>
+				<li><a href="dicts_intro.html">Dictionaries</a></li>
+				<li><a href="functions_intro.html">Functions</a></li>
+				<li><a href="about.html">About Albatross</a></li>
+			</ul>
+		</div>
+		
+		<main>
+
+
+			<article>
+				<h2> PYTHON BASICS </h2>
+				<h3> Extra: Libraries </h3>
+				<p>Like most programming languages, Python has many built-in libraries of code that can easily be imported into your programs.</p>
+				<p>The two libraries that most people learn about first are <code>random</code> and <code>time</code>. <code>random</code> lets you randomize things - for instance <code>random.randint()</code> generates a random number in a ceratin range (like in a for loop, the range is what goes inside the brackets). </p> 
+				<p><code>time</code> lets you bring elements of time into your program. For instance <code>time.sleep()</code> lets you delay a block of code from running by a certain number of seconds (the number of seconds is what goes in the brackets). Thinking in terms of usability, this is good to use to let the user know that something is happening in your program.</p>
+				<p> To import a library, simply type <code>import</code> followed by the name of the library.</p>
+			</article>
+
+			<div class="wrapper">
+				<h3> Example Code </h3>
+				<div class="space"></div>
+				<button class="show">SHOW</button>
+			</div>
+			<article class="example">
+				<p> Copy this code to your IDE, save it and run it in the module to see what happens:</p>
+				<section>
+					<code>
+						<pre>
+<span class="orange">import</span> random
+
+num = random.randint(1,100)
+
+<span class="orange">for</span> i <span class="orange">in</span> <span class="purple">range</span>(0,10):
+	
+	<span class="purple">print</span>(num)
+	
+
+
+
+						</pre>
+					</code>
+				</section>
+				<button class="hide">HIDE</button>
+			</article>
+
+
+
+			<div class="wrapper">
+				<button><a href="basics8.html">Previous Lesson</a></button>
+				<div class="space"></div>
+				<button><a href="basics10.html">Next Lesson</a></button>
+			</div>
+		</main>
+
+		<footer>
+			<p> Made by James McKenzie in 2020 </p>
+		</footer>
+ 
+	</body> 
+
+</html> 

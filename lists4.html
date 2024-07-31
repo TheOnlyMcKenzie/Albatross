@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Albatross </title> 
+		<meta name="description" content=" ... "> 
+		<link href="css/style.css" rel="stylesheet"> 
+
+		
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		
+  		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+  		<script src="scripts/jquery.sidr.min.js"></script>
+  		<script src="scripts/menu.js"></script>
+  		<script src="scripts/example.js"></script>
+ 	</head> 
+
+	<body> 
+		<header>
+			<h1> Albatross </h1>
+		</header>
+
+		<a id="simple-menu" href="sidr"><img src="img/icon.png"></a>
+
+		<div id="sidr">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="intro.html">Python Basics</a></li>
+				<li><a class="active" href="lists_intro.html">Lists</a></li>
+				<li><a href="dicts_intro.html">Dictionaries</a></li>
+				<li><a href="functions_intro.html">Functions</a></li>
+				<li><a href="about.html">About Albatross</a></li>
+			</ul>
+		</div>
+		
+		<main>
+
+
+			<article>
+				<h2> LISTS </h2>
+				<h3> Looking in a List </h3>
+				<p>When we loop through a list, we look at every item in the list. However in the real world things are often much more complex, and lists can get very long - imagine if the list contained over 200 foods; the program would be a little tedious for the user!</p>
+				<h3> Checking to See If an Item is in a List</h3>
+				<p> We can check to see if an item is in a list by doing the following: </p> 
+				<section>
+					<code>
+						<pre>
+foods = [<span class="green">"Pizza"</span>, <span class="green">"Ice Cream"</span>, <span class="green">"Apple"</span>, <span class="green">"Cherry"</span>, <span class="green">"Pie"</span>, <span class="green">"Steak"</span>]
+
+food = <span class="purple">input</span>(<span class="green">"What food would you like to check for?: "</span>)
+<span class="orange">if</span> food <span class="orange">in</span> foods:
+	<span class="purple">print</span>(<span class="green">"Yes it's there"</span>)
+<span class="orange">else</span>:
+	<span class="purple">print</span>(<span class="green">"Sorry it's not there"</span>)
+
+						</pre>
+					</code>
+				</section>
+				<p> Handy, right? Additionally, since a string is essentially a list of characters (even though it does not behave like one), we can also apply the <code>in</code> function to a string.</p> 
+				<p>Well now that we know whether it's in there or not, what if we also want to know where it is in the list? </p>
+			</article>
+
+			<article>
+				<h3>Checking to see where an item is in a list (what its index is)</h3>
+				<p>If we know an item is in a list we can use the <code>.index()</code> function to find out where in the list it is. We do need to be careful though - if we ask for the index of an item that isn't in the list, our code will break and we will get an error.</p> <p>To get around this issue we can simply use some code similar to the code above to check that the item is actually in the list before we try to look for its index. </p>
+			</article>
+
+			<div class="wrapper">
+				<h3> Example Code </h3>
+				<div class="space"></div>
+				<button class="show">SHOW</button>
+			</div>
+			<article class="example">
+				<p> Copy this code to your IDE, save it and run it in the module to see what happens:</p>
+				<section>
+					<code>
+						<pre>
+foods = [<span class="green">"Pizza"</span>, <span class="green">"Ice Cream"</span>, <span class="green">"Apple"</span>, <span class="green">"Cherry"</span>, <span class="green">"Pie"</span>, <span class="green">"Steak"</span>]
+
+<span class="purple">print</span>(foods.index(<span class="green">"Pie"</span>))
+
+						</pre>
+					</code>
+				</section>
+				<button class="hide">HIDE</button>
+			</article>
+
+
+			<div class="wrapper">
+				<button><a href="lists3.html">Previous Lesson</a></button>
+				<div class="space"></div>
+				<button><a href="lists5.html">Next Lesson</a></button>
+			</div>
+		</main>
+
+		<footer>
+			<p> Made by James McKenzie in 2020 </p>
+		</footer>
+ 
+	</body> 
+
+</html> 

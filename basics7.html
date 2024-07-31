@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Albatross </title> 
+		<meta name="description" content=" ... "> 
+		<link href="css/style.css" rel="stylesheet"> 
+
+	
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		
+  		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+  		<script src="scripts/jquery.sidr.min.js"></script>
+  		<script src="scripts/menu.js"></script>
+
+ 	</head> 
+
+	<body> 
+		<header>
+			<h1> Albatross </h1>
+		</header>
+		
+		<a id="simple-menu" href="sidr"><img src="img/icon.png"></a>
+
+		<div id="sidr">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a class="active" href="intro.html">Python Basics</a></li>
+				<li><a href="lists_intro.html">Lists</a></li>
+				<li><a href="dicts_intro.html">Dictionaries</a></li>
+				<li><a href="functions_intro.html">Functions</a></li>
+				<li><a href="about.html">About Albatross</a></li>
+			</ul>
+		</div>
+		
+		<main>
+
+
+			<article>
+				<h2> PYTHON BASICS </h2>
+				<h3> Conditionals (If/Else Statements) </h3>
+				<p>The third essential component of Python we are going to cover are what computer scientists call conditionals. These are statements that describe the condition of a variable.</p>
+				<p> In most programming languages, including Python, conditionals are denoted with the statements <code>if</code> and <code>else</code>. The conditional in Python is written as "if (variable) =/>/< x:". Like in loops, the colon denotes an indented block of code that runs when the condition is met. If the condition is not met (<code>else:</code>), then another indented block of code runs.</p> 
+				<p> There is also a midpoint between <code>if</code> and <code>else</code> called <code>elif</code>, which denotes an alternate block of code that runs when one condition is not met but another is (in this case the <code>else</code> runs if none of the conditions are met). Unlike <code>if</code> and <code>else</code>, you can have as many of these as you like between the opening <code>if</code> and closing <code>else</code>. In other programming languages, this statement is called <code>else if</code> or some other variation, but in Python the words are combined and it is written as <code>elif</code>.</p>
+			</article>
+
+
+			<article class="example">
+				<h3> Example Code </h3>
+				<p> Copy this code to your IDE, save it and run it in the module to see what happens:</p>
+				<section>
+					<code>
+						<pre>
+age = <span class="purple">int</span>(<span class="purple">input</span>(<span class="green">"Welcome to the Club! How old are you?"</span>))
+
+<span class="orange">if</span> age >= 18:
+	<span class="purple">print</span>(<span class="green">"Come on in!"</span>)
+
+<span class="orange">else</span>:
+	<span class="purple">print</span>(<span class="green">"Sorry, you're too young"</span>)
+						</pre>
+					</code>
+				</section>
+			</article>
+
+			<div class="wrapper">
+				<button><a href="basics6.html">Previous Lesson</a></button>
+				<div class="space"></div>
+				<button><a href="basics8.html">Next Lesson</a></button>
+			</div>
+		</main>
+
+		<footer>
+			<p> Made by James McKenzie in 2020 </p>
+		</footer>
+ 
+	</body> 
+
+</html> 

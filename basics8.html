@@ -1,0 +1,107 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Albatross </title> 
+		<meta name="description" content=" ... "> 
+		<link href="css/style.css" rel="stylesheet"> 
+
+	
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		
+  		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+  		<script src="scripts/jquery.sidr.min.js"></script>
+  		<script src="scripts/menu.js"></script>
+  		<script src="scripts/example.js"></script>
+
+ 	</head> 
+
+	<body> 
+		<header>
+			<h1> Albatross </h1>
+		</header>
+		
+		<a id="simple-menu" href="sidr"><img src="img/icon.png"></a>
+
+		<div id="sidr">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a class="active" href="intro.html">Python Basics</a></li>
+				<li><a href="lists_intro.html">Lists</a></li>
+				<li><a href="dicts_intro.html">Dictionaries</a></li>
+				<li><a href="functions_intro.html">Functions</a></li>
+				<li><a href="about.html">About Albatross</a></li>
+			</ul>
+		</div>
+		
+		<main>
+
+
+			<article>
+				<h2> PYTHON BASICS </h2>
+				<h3> Booleans </h3>
+				<p>Boolean algebra is another aspect of mathematics which is centered around the idea that all values are either <code>True</code> or <code>False</code>. Booleans are instrumental in digital electronics and all modern programming languages, including Python, provide for them.</p>
+				<p> In terms of Python programming, <code>True</code> and <code>False</code> denote the condition of a boolean. If x is <code>True</code>, then y runs. If it is <code>False</code>, then z runs.</p> 
+				<p>Booleans are particularly useful when running While Loops. The loop runs while x is <code>True</code> (or <code>False</code> depending on the context). Once a certain condition has been met, x becomes <code>False</code> (or <code>True</code> depending on the context) and the loop ends.</p>
+				<p> Following this logic, it is therefore possible to create an infinite loop using the statement <code>while True:</code>, and the only way to end this loop is to use <code>break</code>. This can be useful for some situations, however as mentioned before doing this is generally considered bad practice - it is best to avoid any situation where a loop may become infinte.</p>
+				<p> As you may have guessed by now, <code>True</code> and <code>False</code> are always written as proper nouns.</p>
+			</article>
+
+			<article>
+				<h3> Boolean Operators </h3>
+				<p>In addition to <code>True</code> and <code>False</code>, there also exist three boolean operators - they are <code>and</code>, <code>or</code> and <code>not</code>.</p>
+				<p>These can be used to narrow the conditions which one or more variables need to meet in order for a block of code to run e.g. <code>if x > y and y < z:</code>, or <code> if x == a or y == b:</code>.</p> 
+				<p>Unlike <code>True</code> and <code>False</code>, boolean operators do not need to start with a capital letter.</p>
+			</article>
+
+			<div class="wrapper">
+				<h3> Example Code </h3>
+				<div class="space"></div>
+				<button class="show">SHOW</button>
+			</div>
+			<article class="example">
+				<p> Copy this code to your IDE, save it and run it in the module to see what happens:</p>
+				<section>
+					<code>
+						<pre>
+invalid = <span class="orange">True</span>
+
+<span class="orange">while</span> invalid:
+	age = <span class="purple">int</span>(<span class="purple">input</span>(<span class="green">"Welcome to the Club! How old are you?"</span>))
+
+	<span class="orange">if</span> age >= 18:
+		<span class="purple">print</span>(<span class="green">"Come on in!"</span>)
+		invalid = <span class="orange">False</span>
+
+	<span class="orange">elif</span> age >= 0 <span class="orange">and</span> age < 18:
+		<span class="purple">print</span>(<span class="green">"Sorry, you're too young"</span>)
+		invalid = <span class="orange">False</span>
+
+	<span class="orange">else</span>:
+		<span class="purple">print</span>(<span class="green">"You can't have a negative age, silly!"</span>)
+	
+
+
+
+						</pre>
+					</code>
+				</section>
+				<button class="hide">HIDE</button>
+			</article>
+
+
+
+			<div class="wrapper">
+				<button><a href="basics8.html">Previous Lesson</a></button>
+				<div class="space"></div>
+				<button><a href="basics9.html">Next Lesson</a></button>
+			</div>
+		</main>
+
+		<footer>
+			<p> Made by James McKenzie in 2020 </p>
+		</footer>
+ 
+	</body> 
+
+</html> 

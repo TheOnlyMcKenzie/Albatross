@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Albatross </title> 
+		<meta name="description" content=" ... "> 
+		<link href="css/style.css" rel="stylesheet"> 
+
+		
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		
+  		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+  		<script src="scripts/jquery.sidr.min.js"></script>
+  		<script src="scripts/menu.js"></script>
+ 	</head> 
+
+	<body> 
+		<header>
+			<h1> Albatross </h1>
+		</header>
+
+		<a id="simple-menu" href="sidr"><img src="img/icon.png"></a>
+
+		<div id="sidr">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="intro.html">Python Basics</a></li>
+				<li><a class="active" href="lists_intro.html">Lists</a></li>
+				<li><a href="dicts_intro.html">Dictionaries</a></li>
+				<li><a href="functions_intro.html">Functions</a></li>
+				<li><a href="about.html">About Albatross</a></li>
+			</ul>
+		</div>
+		
+		<main>
+
+
+			<article>
+				<h2> LISTS </h2>
+				<h3> Creating a List </h3>
+				<p>In Python, lists are denoted with square brackets [ ]. Everything inside those square brackets is part of the list. Items are separated by a comma.</p>
+				<p> There are two ways to create a list in Python. The first is to simply define the list like so: <code>list = [item1, item 2..]</code></p> 
+				<p> The other way is to use the list function. This is useful if we want to convert a string into a list. This is written as <code>string_list = list(string)</code>. Note that the string must be contained within a variable in order for this to work.</p>
+			</article>
+
+			<article class="example">
+				<h3> Example Code </h3>
+				<p> Copy this code to your IDE, save it and run it in the module to see what happens:</p>
+				<section>
+					<code>
+						<pre>
+foods = [<span class="green">"Pizza"</span>, <span class="green">"Ice Cream"</span>, <span class="green">"Apple"</span>]
+
+<span class="purple">print</span>(foods)
+						</pre>
+					</code>
+				</section>
+			</article>
+
+			<div class="wrapper">
+				<button><a href="lists_intro.html">Previous Lesson</a></button>
+				<div class="space"></div>
+				<button><a href="lists2.html">Next Lesson</a></button>
+			</div>
+		</main>
+
+		<footer>
+			<p> Made by James McKenzie in 2020 </p>
+		</footer>
+ 
+	</body> 
+
+</html> 

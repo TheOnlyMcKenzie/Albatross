@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Albatross </title> 
+		<meta name="description" content=" ... "> 
+		<link href="css/style.css" rel="stylesheet"> 
+
+		
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		
+  		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+  		<script src="scripts/jquery.sidr.min.js"></script>
+  		<script src="scripts/menu.js"></script>
+
+ 	</head> 
+
+	<body> 
+		<header>
+			<h1> Albatross </h1>
+		</header>
+		
+		<a id="simple-menu" href="sidr"><img src="img/icon.png"></a>
+
+		<div id="sidr">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a class="active" href="intro.html">Python Basics</a></li>
+				<li><a href="lists_intro.html">Lists</a></li>
+				<li><a href="dicts_intro.html">Dictionaries</a></li>
+				<li><a href="functions_intro.html">Functions</a></li>
+				<li><a href="about.html">About Albatross</a></li>
+			</ul>
+		</div>
+		
+		<main>
+
+
+			<article>
+				<h2> PYTHON BASICS </h2>
+				<h3> Loops Part 1 - For Loops </h3>
+				<p>In programming, loops are another essential component. A loop is where a block of code is repeated, either a certain number of times or until a condition is met. There are two main kinds of loops - for loops and while loops, and you can put any block of code in them, including other loops.</p>
+				<p> We will discuss for loops first. For loops are generally what to use if you want to repeat something a certain amount of times. To do this, we write "for (variable) in range(start, stop):".</p> 
+				<p> When creating a general for loop, we use the variable <code>i</code> ("i" for integer). This represents the number of times we want our loop to run. Then we define our parameters using <code>range()</code>. The range is the difference between the stop and start point, so if we write <code>for i in range(1,7):</code>, the block of code indented within the loop will run six times. If only one argument is given in the <code>range()</code>, that will represent the stop point (by default the starting point is zero).</p>
+				<p> For Python loops in general, we write a colon after the loop command to denote indentation. One intented block of code is nested within the for loop by one tab.</p>
+			</article>
+
+			<article class="example">
+				<h3> Example Code </h3>
+				<p> Copy this code to your IDE, save it and run it in the module to see what happens:</p>
+				<section>
+					<code>
+						<pre>
+<span class="orange">for</span> i <span class="orange">in</span> <span class="purple">range</span>(1,7):
+	
+	<span class="purple">print</span>(i)
+						</pre>
+					</code>
+				</section>
+			</article>
+
+			<div class="wrapper">
+				<button><a href="basics4.html">Previous Lesson</a></button>
+				<div class="space"></div>
+				<button><a href="basics6.html">Next Lesson</a></button>
+			</div>
+		</main>
+
+		<footer>
+			<p> Made by James McKenzie in 2020 </p>
+		</footer>
+ 
+	</body> 
+
+</html> 

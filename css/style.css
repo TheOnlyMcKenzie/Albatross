@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;700&display=swap');
+/*INFO*/
+/* H1 - Montserrat 700, 50px, white, left*/
+/* H2 - Montserrat 300, 25pt, orange, centered*/
+/* H3 - Montserrat 700, 20pt, white, centered (except for 'Example Code', then it is to the left)*/
+/* Paragraph text - Montserrat 200, white */
+/* Nav text - Montserrat 300, orange */
+/* Footer text - Montserrat 300, white, 18px*/  
+
+/* Removes the gaps between the header/footer and the top/bottom of the page*/
+*{	
+	margin-bottom:0px;
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	padding:0px;
+}
+
+/* Makes the footer stick to the bottom no matter what size screen*/
+html{
+	position:relative;
+	min-height:100%;
+}
+
+
+body{
+	background-color:#131323;
+	margin: 0 0 150px;
+}
+
+
+/* Code for the hamburger icon*/
+#simple-menu img{
+	width:50pt;
+	margin-left:2%;
+	margin-top:2%;
+}
+
+.slider img{
+	height:200px;
+}
+header{
+	/* Header should be the width of the whole page regardless of browser size*/
+	background: rgb(234,141,26);
+	background: linear-gradient(180deg, rgba(234,141,26,1) 0%, rgba(197,71,6,1) 89%, rgba(189,57,0,1) 100%);
+	margin:0 auto;
+	padding:0px;
+	top:0;
+	width:100%;
+}
+
+header h1{
+	font-size: 50px;
+	display:block;
+	padding-left:2%;
+	color:white;
+	font-family:'Montserrat', sans-serif;
+}
+
+/* Start of styling for the hamburger menu*/
+#sidr{
+	background:#131324;
+}
+#sidr ul li{
+	background: rgb(234,141,26);
+	background: linear-gradient(180deg, rgba(234,141,26,1) 0%, rgba(197,71,6,1) 89%, rgba(189,57,0,1) 100%);
+}
+#sidr ul li a{
+	font-family:'Montserrat', sans-serif;
+	font-weight: 300;
+}
+#sidr ul li a:hover{
+	background:white;
+	color:rgb(234,141,26);
+	box-shadow: none;
+}
+#sidr ul li a.active{
+	background:white;
+	color:rgb(234,141,26);
+	box-shadow: none;
+}
+
+/* Styling for the slider menu*/
+#slidermenu{
+	width:960px;
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	margin:0 auto;
+	margin-top: 100px;
+}
+.left{
+	width:33%;
+}
+.right{
+	width:33%;
+}	
+
+main{
+	position:relative;
+	width:960px;
+	margin:0 auto;
+	margin-top:50px;
+	min-height:800px;
+}
+
+article h2{
+	text-align:center;
+	font-size:25pt;
+	font-family:'Montserrat', sans-serif;
+	font-weight: 300;
+	color:rgb(234,141,26);
+	color:linear-gradient(180deg, rgba(234,141,26,1) 0%, rgba(197,71,6,1) 89%, rgba(189,57,0,1) 100%);
+}
+
+h3{
+	font-size:20pt;
+	font-family:'Montserrat', sans-serif;
+	font-weight: 700;
+	color:white;
+}
+
+article h3{
+	text-align:center;
+	font-size:20pt;
+	font-family:'Montserrat', sans-serif;
+	font-weight: 700;
+	color:white;
+	padding-top:40px;
+}
+.example h3{
+	text-align:left;
+	padding-left: 50px;
+	font-size:20pt;
+	font-family:'Montserrat', sans-serif;
+	font-weight: 700;
+	color:white;
+}
+
+.wrapper h3{
+	text-align:left;
+	padding-left: 50px;
+	font-size:20pt;
+	font-family:'Montserrat', sans-serif;
+	font-weight: 700;
+	color:white;
+}
+
+article p{
+	padding-top:40px;
+	padding-bottom:50px;
+	padding-left:50px;
+	padding-right: 50px;
+	color:white;
+	font-family:'Montserrat', sans-serif;
+	font-weight: 200;
+}
+
+article a{
+	color:rgb(234,141,26);
+}
+.wrapper{
+	width:960px;
+	min-height:10%;
+	margin-top:10%;
+	display:flex;
+}
+.space{
+	flex-grow:4;
+}
+/* Styling for the buttons*/
+button{
+	border-width: 0;
+}
+.show{
+	border-width: 0;
+	background:linear-gradient(180deg, rgba(234,141,26,1) 0%, rgba(197,71,6,1) 89%, rgba(189,57,0,1) 100%);
+	color:white;
+	font-family:'Montserrat', sans-serif;
+	font-weight: 300;
+  	text-align: center;
+  	padding: 15px 32px;
+  	display: inline-block;
+}
+.show:hover {
+	background:white;
+	color:rgb(234,141,26);
+}	
+.hide{
+	float:right;
+	border-width: 0;
+	background:linear-gradient(180deg, rgba(234,141,26,1) 0%, rgba(197,71,6,1) 89%, rgba(189,57,0,1) 100%);
+	color:white;
+	font-family:'Montserrat', sans-serif;
+	font-weight: 300;
+  	text-align: center;
+  	padding: 15px 32px;
+  	display: inline-block;
+}
+.hide:hover{
+	background:white;
+	color:rgb(234,141,26);
+}
+/* Styling for the buttons */
+button a{
+	text-decoration:none;
+	background:linear-gradient(180deg, rgba(234,141,26,1) 0%, rgba(197,71,6,1) 89%, rgba(189,57,0,1) 100%);
+	border-width: 0;
+	color:white;
+	font-family:'Montserrat', sans-serif;
+	font-weight: 300;
+	padding: 15px 32px;
+  	text-align: center;
+  	display: inline-block;
+  	
+	
+	
+}
+
+button a:hover {
+	background:white;
+	color:rgb(234,141,26);
+}	
+
+
+/* Styling for the 'Example code' sections with Python code*/
+section{
+	background-color: white;
+	width:810px;
+	padding:10px 20px;
+	margin-left:50px;
+	margin-bottom:20px;
+
+}
+section code{
+	font-family:monospace;
+	font-size:18px;
+}
+.purple{
+	color:purple;
+}
+.green{
+	color:green;
+}
+.orange{
+	color:orange;
+}
+.red{
+	color:red;
+}
+.blue{
+	color:blue;
+}
+
+/* Styling for the footer*/
+footer{
+	background: rgb(234,141,26);
+	background: linear-gradient(180deg, rgba(234,141,26,1) 0%, rgba(197,71,6,1) 89%, rgba(189,57,0,1) 100%);
+	margin:0 auto;
+	margin-top:10%;
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:100%;
+	min-height:50px;
+	font-size:18px;
+	display:inline-block;
+}
+footer p{
+	display:inline-block;
+	padding-top:16px;
+	padding-left:2%;
+	color:white;
+	font-family:'Montserrat', sans-serif;
+	font-weight: 300;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Albatross </title> 
+		<meta name="description" content=" ... "> 
+		<link href="css/style.css" rel="stylesheet"> 
+
+		
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		
+  		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+  		<script src="scripts/jquery.sidr.min.js"></script>
+  		<script src="scripts/menu.js"></script>
+  		<script src="scripts/example.js"></script>
+ 	</head> 
+
+	<body> 
+		<header>
+			<h1> Albatross </h1>
+		</header>
+
+		<a id="simple-menu" href="sidr"><img src="img/icon.png"></a>
+
+		<div id="sidr">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="intro.html">Python Basics</a></li>
+				<li><a href="lists_intro.html">Lists</a></li>
+				<li><a href="dicts_intro.html">Dictionaries</a></li>
+				<li><a class="active" href="functions_intro.html">Functions</a></li>
+				<li><a href="about.html">About Albatross</a></li>
+			</ul>
+		</div>
+		
+		<main>
+
+
+			<article>
+				<h2> FUNCTIONS </h2>
+				<h3> Global vs Local Variables </h3>
+				<p>If you want a variable, constant or array to be available to every function, it should be created in the main routine. Such a variable is called a 'global' variable. All the variables/constants/arrays you have created so far have been global. </p>
+				<p>Any variable created inside a function is considered 'local' to that function. A local variable cannot be used outside of its function.</p>
+			</article>
+
+			<article>
+				<h3> Scope</h3>
+				<p>Local variables and global variables would usually have different names, but it is possible for them to have the same name. This raises for the first time the concept of scope, which is about where a variable is accessible within the structure of the program. </p>
+			</article>
+
+			<article>
+
+				<p>In the following example the name “x” belongs to both a local variable in <code>function_one</code>, as well as the global variable in <code>function_two</code> and the main routine. </p>
+				
+				<section>
+					<code>
+						<pre>
+<span class="red"># function definitions</span> 
+
+<span class="orange">def</span> <span class="blue">function_one</span>():
+	x = 8
+	<span class="purple">print</span>(<span class="green">"x is"</span>, x)
+
+<span class="orange">def</span> <span class="blue">function_two</span>():
+	<span class="purple">print</span>(<span class="green">"x is"</span>, x)
+
+<span class="red"># main routine</span>
+
+x = 5
+<span class="purple">print</span>(<span class="green">"x is"</span>, x)
+function_one()
+function_two()
+
+						</pre>
+					</code>
+				</section>
+
+				
+			</article>
+
+
+			<div class="wrapper">
+				<button><a href="functions2.html">Previous Lesson</a></button>
+				<div class="space"></div>
+				<button><a href="functions4.html">Next Lesson</a></button>
+			</div>
+		</main>
+
+		<footer>
+			<p> Made by James McKenzie in 2020 </p>
+		</footer>
+ 
+	</body> 
+
+</html> 

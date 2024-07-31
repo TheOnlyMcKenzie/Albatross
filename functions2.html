@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Albatross </title> 
+		<meta name="description" content=" ... "> 
+		<link href="css/style.css" rel="stylesheet"> 
+
+		
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		
+  		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+  		<script src="scripts/jquery.sidr.min.js"></script>
+  		<script src="scripts/menu.js"></script>
+  		<script src="scripts/example.js"></script>
+ 	</head> 
+
+	<body> 
+		<header>
+			<h1> Albatross </h1>
+		</header>
+
+		<a id="simple-menu" href="sidr"><img src="img/icon.png"></a>
+
+		<div id="sidr">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="intro.html">Python Basics</a></li>
+				<li><a href="lists_intro.html">Lists</a></li>
+				<li><a href="dicts_intro.html">Dictionaries</a></li>
+				<li><a class="active" href="functions_intro.html">Functions</a></li>
+				<li><a href="about.html">About Albatross</a></li>
+			</ul>
+		</div>
+		
+		<main>
+
+
+			<article>
+				<h2> FUNCTIONS </h2>
+				<h3> Docstrings </h3>
+				<p>As we have said before, commenting your code is an essential part of programming, as code is often read more than it is written.</p>
+				<p>Python documentation strings (docstrings) provide a way of associating documentation with Python modules, functions, classes and methods.  </p>
+				<p>Docstrings are written like multi-line comments (even though they can be as short as one line). They appear as the first statement in a function's definition to describe what the function does. All functions should have a docstring.</p>
+			</article>
+
+			<article>
+
+				<p> Example of a function with a single-line docstring: </p>
+				
+				<section>
+					<code>
+						<pre>
+<span class="orange">def</span> <span class="blue">add_1</span>(num):
+	<span class="green">"""Adds 1 and prints."""</span>
+	<span class="purple">print</span>(num + 1)
+
+						</pre>
+					</code>
+				</section>
+
+				<p>Example of a function with a multi-line docstring:</p>
+				
+				<section>
+					<code>
+						<pre>
+<span class="orange">def</span> <span class="blue">add_5</span>(num):
+	<span class="green">"""Adds 5</span>
+	<span class="green">   returns it as a string</span>
+	<span class="green">"""</span>
+	<span class="orange">return</span>(<span class="purple">str</span>(num + 5))
+
+						</pre>
+					</code>
+				</section>
+			</article>
+
+
+			<div class="wrapper">
+				<button><a href="functions1.html">Previous Lesson</a></button>
+				<div class="space"></div>
+				<button><a href="functions3.html">Next Lesson</a></button>
+			</div>
+		</main>
+
+		<footer>
+			<p> Made by James McKenzie in 2020 </p>
+		</footer>
+ 
+	</body> 
+
+</html> 

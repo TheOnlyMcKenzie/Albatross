@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Albatross </title> 
+		<meta name="description" content=" ... "> 
+		<link href="css/style.css" rel="stylesheet"> 
+
+	
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		
+  		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+  		<script src="scripts/jquery.sidr.min.js"></script>
+  		<script src="scripts/menu.js"></script>
+  		
+
+ 	</head> 
+
+	<body> 
+		<header>
+			<h1> Albatross </h1>
+		</header>
+		
+		<a id="simple-menu" href="sidr"><img src="img/icon.png"></a>
+
+		<div id="sidr">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a class="active" href="intro.html">Python Basics</a></li>
+				<li><a href="lists_intro.html">Lists</a></li>
+				<li><a href="dicts_intro.html">Dictionaries</a></li>
+				<li><a href="functions_intro.html">Functions</a></li>
+				<li><a href="about.html">About Albatross</a></li>
+			</ul>
+		</div>
+		
+		<main>
+
+
+			<article>
+				<h2> PYTHON BASICS </h2>
+				<h3> Commenting Your Code </h3>
+				<p>Last but not least we have comments in Python. If you know anything about programming you'll know that comments are essential, as without them, someone else reading your code may not have any clue what it's supposed to do!.</p>
+				<p> In Python, there are two types of comments - single and multi-line comments. Single-line comments are red and are denoted by a hash. Multi-line comments are green, like strings, and are denoted by three quotes on each end (single or double).</p> 
+				<p> There are a few conventions which govern Python comments - these are available to read in <a href="https://www.python.org/dev/peps/pep-0008/#comments">PEP8</a>. It is strongly recommended you read these. There is also an <a href="http://pep8online.com/">online checker/validator</a> which you can run your code through to make sure it is following the PEP8 coventions.</p>
+				<p> This is the end of the Python Basics course. If you are keen to learn more, check out our other courses! </p>
+			</article>
+
+			<article class="example">
+				<h3> Example Code </h3>
+				<p> Here is an example of commenting in Python:</p>
+				<section>
+					<code>
+						<pre>
+<span class="green">'''This program check's the user's age before letting them enter
+a virtual nightclub'''</span>
+
+
+<span class="red"># Ask the user for their age</span>
+age = <span class="purple">int</span>(<span class="purple">input</span>(<span class="green">"Welcome to the Club! How old are you?"</span>))
+
+<span class="red"># If they are old enough let them in</span>
+<span class="orange">if</span> age >= 18:
+	<span class="purple">print</span>(<span class="green">"Come on in!"</span>)
+
+<span class="red"># If they are underage do not let them in</span>
+<span class="orange">else</span>:
+	<span class="purple">print</span>(<span class="green">"Sorry, you're too young"</span>)
+						</pre>
+					</code>
+				</section>
+			</article>
+
+
+
+			<div class="wrapper">
+				<button><a href="basics9.html">Previous Lesson</a></button>
+				<div class="space"></div>
+				<button><a href="index.html">Back to Home</a></button>
+			</div>
+		</main>
+
+		<footer>
+			<p> Made by James McKenzie in 2020 </p>
+		</footer>
+ 
+	</body> 
+
+</html> 

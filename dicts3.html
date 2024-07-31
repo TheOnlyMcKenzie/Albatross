@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Albatross </title> 
+		<meta name="description" content=" ... "> 
+		<link href="css/style.css" rel="stylesheet"> 
+
+		
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		
+  		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+  		<script src="scripts/jquery.sidr.min.js"></script>
+  		<script src="scripts/menu.js"></script>
+  		<script src="scripts/example.js"></script>
+ 	</head> 
+
+	<body> 
+		<header>
+			<h1> Albatross </h1>
+		</header>
+
+		<a id="simple-menu" href="sidr"><img src="img/icon.png"></a>
+
+		<div id="sidr">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="intro.html">Python Basics</a></li>
+				<li><a href="lists_intro.html">Lists</a></li>
+				<li><a class="active" href="dicts_intro.html">Dictionaries</a></li>
+				<li><a href="functions_intro.html">Functions</a></li>
+				<li><a href="about.html">About Albatross</a></li>
+			</ul>
+		</div>
+		
+		<main>
+
+
+			<article>
+				<h2> DICTIONARIES </h2>
+				<h3> Looping through a Dictionary </h3>
+				<p>There are two ways to do this - the <code>keys()</code> method along with the <code>items()</code> method (which returns both the key and the value).</p>
+			</article>
+			
+			<div class="wrapper">
+				<h3> Example Code </h3>
+				<div class="space"></div>
+				<button class="show">SHOW</button>
+			</div>
+			<article class="example">
+				<p> The keys() method:</p>
+				<section>
+					<code>
+						<pre>
+<span class="orange">for</span> key <span class="orange">in</span> country_foods.keys():
+	value = country_foods[key]
+	<span class="purple">print</span>(key, <span class="green">"="</span>, value)
+
+						</pre>
+					</code>
+				</section>
+
+				<p> The items() method:</p>
+				<section>
+					<code>
+						<pre>
+<span class="orange">for</span> key, value <span class="orange">in</span> country_foods.items():
+	<span class="purple">print</span>(key, <span class="green">"="</span>, value)
+
+						</pre>
+					</code>
+				</section>
+				<button class="hide">HIDE</button>
+			</article>
+
+
+			<div class="wrapper">
+				<button><a href="dicts2.html">Previous Lesson</a></button>
+				<div class="space"></div>
+				<button><a href="dicts4.html">Next Lesson</a></button>
+			</div>
+		</main>
+
+		<footer>
+			<p> Made by James McKenzie in 2020 </p>
+		</footer>
+ 
+	</body> 
+
+</html> 

@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Albatross </title> 
+		<meta name="description" content=" ... "> 
+		<link href="css/style.css" rel="stylesheet"> 
+
+		
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		
+  		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+  		<script src="scripts/jquery.sidr.min.js"></script>
+  		<script src="scripts/menu.js"></script>
+
+ 	</head> 
+
+	<body> 
+		<header>
+			<h1> Albatross </h1>
+		</header>
+		
+		<a id="simple-menu" href="sidr"><img src="img/icon.png"></a>
+
+		<div id="sidr">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a class="active" href="intro.html">Python Basics</a></li>
+				<li><a href="lists_intro.html">Lists</a></li>
+				<li><a href="dicts_intro.html">Dictionaries</a></li>
+				<li><a href="functions_intro.html">Functions</a></li>
+				<li><a href="about.html">About Albatross</a></li>
+			</ul>
+		</div>
+		
+		<main>
+
+
+			<article>
+				<h2> PYTHON BASICS </h2>
+				<h3> Collecting Data from User Input </h3>
+				<p>Aside from hardcoding data into a variable, we can store user-entered data (or any externally-sourced data) in a variable. We do this using the <code>input()</code> statement.</p>
+				<p> The general format for an input statement is "(variable) = input(text)". The input prompt printed out to the user can either be a hard-coded string or a variable.</p> 
+			</article>
+
+			<article>
+				<h3> Outputting Data Using .format()</h3>
+				<p> Additionally, we can output data in a neater fashion using <code>.format()</code>. This allows us to insert the value of one or more variables into a string to output.</p>
+				<p> This is done in the format "print('{}'.format(variable))". Remember to check that all brackets are closed - this is one of the most common errors in Python!</p>\
+			</article>
+
+			<article class="example">
+				<h3> Example Code </h3>
+				<p> Copy this code to your IDE, save it and run it in the module to see what happens:</p>
+				<section>
+					<code>
+						<pre>
+name = <span class="purple">input</span>(<span class="green">"What is your name?"</span>)
+
+<span class="purple">print</span>(<span class="green">"Hello, {}"</span>.format(name))
+						</pre>
+					</code>
+				</section>
+			</article>
+
+			<div class="wrapper">
+				<button><a href="basics3.html">Previous Lesson</a></button>
+				<div class="space"></div>
+				<button><a href="basics5.html">Next Lesson</a></button>
+			</div>
+		</main>
+
+		<footer>
+			<p> Made by James McKenzie in 2020 </p>
+		</footer>
+ 
+	</body> 
+
+</html> 

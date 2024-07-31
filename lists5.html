@@ -1,0 +1,138 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Albatross </title> 
+		<meta name="description" content=" ... "> 
+		<link href="css/style.css" rel="stylesheet"> 
+
+		
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		
+  		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+  		<script src="scripts/jquery.sidr.min.js"></script>
+  		<script src="scripts/menu.js"></script>
+  		<script src="scripts/example.js"></script>
+ 	</head> 
+
+	<body> 
+		<header>
+			<h1> Albatross </h1>
+		</header>
+
+		<a id="simple-menu" href="sidr"><img src="img/icon.png"></a>
+
+		<div id="sidr">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="intro.html">Python Basics</a></li>
+				<li><a class="active" href="lists_intro.html">Lists</a></li>
+				<li><a href="dicts_intro.html">Dictionaries</a></li>
+				<li><a href="functions_intro.html">Functions</a></li>
+				<li><a href="about.html">About Albatross</a></li>
+			</ul>
+		</div>
+		
+		<main>
+
+
+			<article>
+				<h2> LISTS </h2>
+				<h3> Sorting a List </h3>
+				<p>Sometimes we need to sort things in our list. We do this using the <code>.sort()</code> function. They have to be the same datatype, though - you can't sort a heterogeneous list. </p>
+				<p> Capitals come before lowercase. </p>
+			</article> 
+			
+			<div class="wrapper">
+				<h3> Example Code </h3>
+				<div class="space"></div>
+				<button class="show">SHOW</button>
+			</div>
+			<article class="example">
+				<p> Copy this code to your IDE, save it and run it in the module to see what happens:</p>
+				<section>
+					<code>
+						<pre>
+foods = [<span class="green">"Pizza"</span>, <span class="green">"Ice Cream"</span>, <span class="green">"Apple"</span>, <span class="green">"Cherry"</span>, <span class="green">"Pie"</span>, <span class="green">"Steak"</span>]
+
+foods.sort()
+
+<span class="purple">print</span>(foods)
+
+						</pre>
+					</code>
+				</section>
+				<button class="hide">HIDE</button>
+			</article>
+
+			<article>
+				<h3>Shuffling a List</h3>
+				<p>For some reason we may want to shuffle our list. We will need to import from the <code>random</code> library to do so. From there we use <code>random.shuffle()</code>. </p>
+			</article>
+
+			<div class="wrapper">
+				<h3> Example Code </h3>
+				<div class="space"></div>
+				<button class="show">SHOW</button>
+			</div>
+			<article class="example">
+				<p> Copy this code to your IDE, save it and run it in the module to see what happens:</p>
+				<section>
+					<code>
+						<pre>
+<span class="orange">import</span> random
+
+foods = [<span class="green">"Pizza"</span>, <span class="green">"Ice Cream"</span>, <span class="green">"Apple"</span>, <span class="green">"Cherry"</span>, <span class="green">"Pie"</span>, <span class="green">"Steak"</span>]
+
+random.shuffle(foods)
+
+<span class="purple">print</span>(foods)
+
+						</pre>
+					</code>
+				</section>
+				<button class="hide">HIDE</button>
+			</article>
+
+			<article>
+				<h3>Split</h3>
+				<p>We can split a string on a given token to convert it into a list using <code>.split()</code> </p>
+			</article>
+
+			<div class="wrapper">
+				<h3> Example Code </h3>
+				<div class="space"></div>
+				<button class="show">SHOW</button>
+			</div>
+			<article class="example">
+				<p> Copy this code to your IDE, save it and run it in the module to see what happens:</p>
+				<section>
+					<code>
+						<pre>
+
+string = <span class="green">"Here is a sentence"</span>
+
+string_list = string.split(<span class="green">" "</span>)
+
+<span class="purple">print</span>(string_list)
+
+						</pre>
+					</code>
+				</section>
+				<button class="hide">HIDE</button>
+			</article>
+
+			<div class="wrapper">
+				<button><a href="lists4.html">Previous Lesson</a></button>
+				<div class="space"></div>
+				<button><a href="lists6.html">Next Lesson</a></button>
+			</div>
+		</main>
+
+		<footer>
+			<p> Made by James McKenzie in 2020 </p>
+		</footer>
+ 
+	</body> 
+
+</html> 

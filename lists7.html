@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Albatross </title> 
+		<meta name="description" content=" ... "> 
+		<link href="css/style.css" rel="stylesheet"> 
+
+		
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		
+  		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+  		<script src="scripts/jquery.sidr.min.js"></script>
+  		<script src="scripts/menu.js"></script>
+ 	</head> 
+
+	<body> 
+		<header>
+			<h1> Albatross </h1>
+		</header>
+
+		<a id="simple-menu" href="sidr"><img src="img/icon.png"></a>
+
+		<div id="sidr">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="intro.html">Python Basics</a></li>
+				<li><a class="active" href="lists_intro.html">Lists</a></li>
+				<li><a href="dicts_intro.html">Dictionaries</a></li>
+				<li><a href="functions_intro.html">Functions</a></li>
+				<li><a href="about.html">About Albatross</a></li>
+			</ul>
+		</div>
+		
+		<main>
+
+
+			<article>
+				<h2> LISTS </h2>
+				<h3> 2D Lists </h3>
+				<p>A 2D List is a list of lists. We've mentioned before that lists are heterogeneous. This means that we can put any type of data into a list: strings, integers, floats,Booleans and yes, other lists. Putting a list inside a list makes a list 2-dimensional.</p>
+				<p> To create a 2D list you would write the notation like so:  </p>
+				<section>
+					<code>
+						<pre>
+list_2d = [[<span class="green">"a"</span>, <span class="green">"b"</span>], [1,2,3]]
+
+						</pre>
+					</code>
+				</section>
+				<p> All the same things we just learnt about 1D lists also apply to 2D lists.</p>
+			</article> 
+
+			<article>
+				<h3>Accessing Items in a 2D List</h3>
+				<p>If we want to access a value in our 2d list be careful! You don't write it with a square bracket inside a square bracket list how you create your 2d list. Instead you write it next to each other with the first index referring to the first index of the list and the second the second. </p>
+				<section>
+					<code>
+						<pre>
+<span class="purple">print</span>(list_2d[1][2])
+
+						</pre>
+					</code>
+				</section>
+				<p>Technically you could just keep going on with a 3D list etc. (a list of lists of lists... ListCeption much?)</p>
+			</article>
+			
+			<div class="wrapper">
+				<button><a href="lists6.html">Previous Lesson</a></button>
+				<div class="space"></div>
+				<button><a href="lists8.html">Next Lesson</a></button>
+			</div>
+		</main>
+
+		<footer>
+			<p> Made by James McKenzie in 2020 </p>
+		</footer>
+ 
+	</body> 
+
+</html> 

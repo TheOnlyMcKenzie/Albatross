@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<!--INFO:
+Fonts: Montserrat 700 for headings, Montserrat 300 for subheadings and Montserrat 200 for paragraph text
+Plugins Used: bxSlider, sidr. I acknowledge that these scripts are not my own.
+-->
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Albatross </title> 
+		<meta name="description" content=" ... "> 
+		<link href="css/style.css" rel="stylesheet">  
+
+		<!--Link to the jQuery library-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<!--Links to the scripts and stylesheet for the slider (will only be on this page)-->
+		<!--The slider uses the bxSlider jQuery plugin. The link and the first script link to this plugin.-->
+  		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  		<script src="scripts/slider.js"></script>
+  		<!--Links to the scripts and stylesheet for the hamburger menu (will be on every page)-->
+  		<!--The hamburger menu uses the sidr plugin. The link and the first script link to this plugin. -->
+  		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+  		<script src="scripts/jquery.sidr.min.js"></script>
+  		<script src="scripts/menu.js"></script>
+  		<!--Link to the script for the toggleable example code (will only be on some pages)-->
+  		<script src="scripts/example.js"></script>
+
+ 	</head> 
+
+	<body> 
+		<header>
+			<h1> Albatross </h1>
+		</header>
+
+		<!--Code for the hamburger menu-->
+		<a id="simple-menu" href="sidr"><img src="img/icon.png" alt="Navigation Menu"></a>
+
+		<div id="sidr">
+			<ul>
+				<li><a class="active" href="index.html">Home</a></li><!--"Active" class will invert the colours of that link if you're already on that page-->
+				<li><a href="intro.html">Python Basics</a></li>
+				<li><a href="lists_intro.html">Lists</a></li>
+				<li><a href="dicts_intro.html">Dictionaries</a></li>
+				<li><a href="functions_intro.html">Functions</a></li>
+				<li><a href="about.html">About Albatross</a></li>
+			</ul>
+		</div>
+
+		<!--Code for the slider-->
+		<div id="slidermenu">
+			<div class="left">
+			</div>
+			<div class="slider">
+  				<div><a href="intro.html"><img src="img/basics.png" alt="Click Here to learn the basics of Python and get strated"></a></div>
+  				<div><a href="lists_intro.html"><img src="img/lists.png" alt="Click here to learn about lists in Python and how to modify data stored in them"></a></div>
+  				<div><a href="dicts_intro.html"><img src="img/dicts.png" alt="Click here to learn about dictionaries in Python and how to modify data stored in them"></a></div>
+  				<div><a href="functions_intro.html"><img src="img/functions.png" alt="Click here to learn about functions in Python and how to pass data between different functions"></a></div>
+			</div>
+			<div class="right">
+			</div>
+		</div>
+		<main>
+
+
+			<article>
+				<h2> WELCOME TO ALBATROSS </h2>
+				<p>Welcome! Albatross is a website designed to teach the Python programming language to aspiring programmers. We offer simple tutorials on the basics of Python (variables, loops and if/else statements), lists (including multidimensional lists), dictionaries and functions.</p>
+				<p> This website is designed to be most useful to Digital Technologies students in year 11, including students who are new to Python and more experienced students who want to know more advanced programming techniques such as functions (this way you can get a headstart going into year 12 DTC). However, it should also be useful to anyone wanting to learn Python.</p> <p> To get started, simply choose one of the courses above!</p>
+			</article>
+		</main>
+
+		<footer>
+			<p> Made by James McKenzie in 2020 </p>
+		</footer>
+ 
+	</body> 
+
+</html> 

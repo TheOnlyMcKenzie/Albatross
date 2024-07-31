@@ -1,0 +1,95 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Albatross </title> 
+		<meta name="description" content=" ... "> 
+		<link href="css/style.css" rel="stylesheet"> 
+
+		
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		
+  		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+  		<script src="scripts/jquery.sidr.min.js"></script>
+  		<script src="scripts/menu.js"></script>
+  		<script src="scripts/example.js"></script>
+ 	</head> 
+
+	<body> 
+		<header>
+			<h1> Albatross </h1>
+		</header>
+
+		<a id="simple-menu" href="sidr"><img src="img/icon.png"></a>
+
+		<div id="sidr">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="intro.html">Python Basics</a></li>
+				<li><a class="active" href="lists_intro.html">Lists</a></li>
+				<li><a href="dicts_intro.html">Dictionaries</a></li>
+				<li><a href="functions_intro.html">Functions</a></li>
+				<li><a href="about.html">About Albatross</a></li>
+			</ul>
+		</div>
+		
+		<main>
+
+
+			<article>
+				<h2> LISTS </h2>
+				<h3> Looping Through a List </h3>
+				<p>Since lists are defined by order, one thing we can do with lists is loop through them to put each value in the list through a certain block of code/function, using a for loop.</p>
+				<p> We can do this by using the function <code>len()</code>. "len" means the length of a list, so if we run the loop <code>for i in range(len(list)):</code>, whatever code is in the loop will run the same amount of times as the amout of values in the list.</p> 
+				<p> There is a short way of doing this, however it can't be applied in the same amount of circumstances that the long method can. To loop through a list we can just write <code>for food in foods:</code> (which is a shorter way of writing <code>for i in range(len(foods))</code>.</p>
+			</article>
+
+			<div class="wrapper">
+				<h3> Example Code </h3>
+				<div class="space"></div>
+				<button class="show">SHOW</button>
+			</div>
+			<article class="example">
+				<p> The long method:</p>
+				<section>
+					<code>
+						<pre>
+foods = [<span class="green">"Pizza"</span>, <span class="green">"Ice Cream"</span>, <span class="green">"Apple"</span>]
+
+<span class="orange">for</span> i <span class="orange">in</span> <span class="purple">range</span>(len(foods)):
+	<span class="purple">print</span>(i)
+
+						</pre>
+					</code>
+				</section>
+
+				<p> The short method:</p>
+				<section>
+					<code>
+						<pre>
+foods = [<span class="green">"Pizza"</span>, <span class="green">"Ice Cream"</span>, <span class="green">"Apple"</span>]
+
+<span class="orange">for</span> food <span class="orange">in</span> foods:
+	<span class="purple">print</span>(food)
+
+						</pre>
+					</code>
+				</section>
+				<button class="hide">HIDE</button>
+			</article>
+
+
+			<div class="wrapper">
+				<button><a href="lists2.html">Previous Lesson</a></button>
+				<div class="space"></div>
+				<button><a href="lists4.html">Next Lesson</a></button>
+			</div>
+		</main>
+
+		<footer>
+			<p> Made by James McKenzie in 2020 </p>
+		</footer>
+ 
+	</body> 
+
+</html> 

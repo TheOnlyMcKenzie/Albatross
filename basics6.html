@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Albatross </title> 
+		<meta name="description" content=" ... "> 
+		<link href="css/style.css" rel="stylesheet"> 
+
+		
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		
+  		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+  		<script src="scripts/jquery.sidr.min.js"></script>
+  		<script src="scripts/menu.js"></script>
+
+ 	</head> 
+
+	<body> 
+		<header>
+			<h1> Albatross </h1>
+		</header>
+		
+		<a id="simple-menu" href="sidr"><img src="img/icon.png"></a>
+
+		<div id="sidr">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a class="active" href="intro.html">Python Basics</a></li>
+				<li><a href="lists_intro.html">Lists</a></li>
+				<li><a href="dicts_intro.html">Dictionaries</a></li>
+				<li><a href="functions_intro.html">Functions</a></li>
+				<li><a href="about.html">About Albatross</a></li>
+			</ul>
+		</div>
+		
+		<main>
+
+
+			<article>
+				<h2> PYTHON BASICS </h2>
+				<h3> Loops Part 2 - While Loops </h3>
+				<p>Now that we have covered for loops, let's look at the other kind of loop in Python - While Loops.</p>
+				<p> While loops are generally used when you want to repeat something until a certain condition is met. There are ways to make while loops behave like for loops, but those are generally only used in specific circumstances.</p> 
+				<p> When creating a while loop, we type "while (variable) =/>/< x:". Basically, while a variable is greater than, less than, equal to or not equal to a certain value (usually another variable or a constant), the block of code in the loop is repeated.</p>
+				<p> For Python loops in general, we write a colon after the loop command to denote indentation. One intented block of code is nested within the while loop by one tab.</p>
+			</article>
+
+			<article>
+				<h3> A Note About the 'Break' Statement </h3>
+				<p> To break any while loop, you can use the <code>break</code> statement (you can also use this in for loops). However it is generally considered bad practice to use <code>break</code> as it creates too much potential for bugs. </p>
+			</article>
+
+			<article class="example">
+				<h3> Example Code </h3>
+				<p> Copy this code to your IDE, save it and run it in the module to see what happens:</p>
+				<section>
+					<code>
+						<pre>
+num = 10
+
+<span class="orange">while</span> num > 0:
+	
+	<span class="purple">print</span>(num)
+	num -= 1
+						</pre>
+					</code>
+				</section>
+			</article>
+
+			<div class="wrapper">
+				<button><a href="basics5.html">Previous Lesson</a></button>
+				<div class="space"></div>
+				<button><a href="basics7.html">Next Lesson</a></button>
+			</div>
+		</main>
+
+		<footer>
+			<p> Made by James McKenzie in 2020 </p>
+		</footer>
+ 
+	</body> 
+
+</html> 
