@@ -258,7 +258,7 @@ footer{
 	background: linear-gradient(180deg, rgba(234,141,26,1) 0%, rgba(197,71,6,1) 89%, rgba(189,57,0,1) 100%);
 	margin:0 auto;
 	margin-top:10%;
-	position:absolute;
+	position:fixed;
 	left:0;
 	bottom:0;
 	width:100%;
